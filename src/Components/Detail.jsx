@@ -3,7 +3,6 @@ import { Data } from "../Data";
 import { useEffect } from "react";
 
 const Detail = () => {
-    console.log(DOMParserata);
 
     const [result, setresult] = useState([]);
     const [val, setval] = useState({});
@@ -22,13 +21,6 @@ const Detail = () => {
 
     const handleDelete = (name) => {
         console.log(name);
-        // delete result[index];
-
-        // console.log(result);
-
-        // result.splice(index, 1);
-        // setresult(result);
-        // console.log(res, "result");
 
         setresult(result.filter((e) => e.author !== name));
     };
